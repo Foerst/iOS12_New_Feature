@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNotificationUIViewController" customModule="iOS12" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Uce-PC-Cyu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAB-1q-Rvb">
+                    <rect key="frame" x="125.5" y="64" width="163" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="F8J-Y8-SFY"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="P3S-dc-2uh"/>
+                    </constraints>
+                    <state key="normal" title="本地推送iOS10之前样式"/>
+                    <connections>
+                        <action selector="oldNotif" destination="-1" eventType="touchUpInside" id="y9v-z3-UYP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghh-cz-sIN">
+                    <rect key="frame" x="98.5" y="114" width="217" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="NlY-xU-20D"/>
+                        <constraint firstAttribute="height" constant="30" id="S5a-m1-waN"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="iyl-VN-jcY"/>
+                    </constraints>
+                    <state key="normal" title="iOS12自定义推送UI+可交互控件"/>
+                    <connections>
+                        <action selector="newCustomNotif" destination="-1" eventType="touchUpInside" id="Oec-Ey-8QW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ghh-cz-sIN" firstAttribute="top" secondItem="gAB-1q-Rvb" secondAttribute="bottom" constant="20" id="PPm-hr-wL7"/>
+                <constraint firstItem="Ghh-cz-sIN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SHq-lY-Dqd"/>
+                <constraint firstItem="gAB-1q-Rvb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hM5-8f-TLf"/>
+                <constraint firstItem="gAB-1q-Rvb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="wat-df-TLR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
