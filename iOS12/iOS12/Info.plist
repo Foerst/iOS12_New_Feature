@@ -20,6 +20,13 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSSiriUsageDescription</key>
+	<string>Allow App Use Siri?</string>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>OrderSoupIntent</string>
+		<string>com.ubt.ios12.useractivity</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

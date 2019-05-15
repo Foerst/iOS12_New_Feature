@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8005C12C228996E30071A344 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C12B228996E30071A344 /* IntentHandler.swift */; };
+		8005C133228996E40071A344 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802DEF962289633800989E30 /* IntentsUI.framework */; };
+		8005C136228996E40071A344 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C135228996E40071A344 /* IntentViewController.swift */; };
+		8005C139228996E40071A344 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8005C137228996E40071A344 /* MainInterface.storyboard */; };
+		8005C13D228996E40071A344 /* SoupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8005C132228996E40071A344 /* SoupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8005C140228996E40071A344 /* Soup.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8005C129228996E30071A344 /* Soup.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8005C177228AA9C60071A344 /* ShortcutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C169228AA9C60071A344 /* ShortcutsViewController.swift */; };
+		8005C18C228AB7740071A344 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8005C18B228AB7740071A344 /* Intents.intentdefinition */; };
+		8005C18E228AB8B90071A344 /* ShortcutsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8005C18D228AB8B90071A344 /* ShortcutsViewController.xib */; };
+		8005C190228ABC540071A344 /* Soup.png in Resources */ = {isa = PBXBuildFile; fileRef = 8005C18F228ABC530071A344 /* Soup.png */; };
+		8005C191228AC0660071A344 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8005C18B228AB7740071A344 /* Intents.intentdefinition */; };
+		8005C192228AC0670071A344 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8005C18B228AB7740071A344 /* Intents.intentdefinition */; };
 		80186D93227F0A4F00B27198 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80186D92227F0A4F00B27198 /* UserNotifications.framework */; };
 		80186D95227F0A4F00B27198 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80186D94227F0A4F00B27198 /* UserNotificationsUI.framework */; };
 		80186D98227F0A4F00B27198 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186D97227F0A4F00B27198 /* NotificationViewController.swift */; };
@@ -37,6 +49,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8005C13B228996E40071A344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8088BF0E227ECA1600E4FF5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8005C131228996E30071A344;
+			remoteInfo = SoupUI;
+		};
+		8005C13E228996E40071A344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8088BF0E227ECA1600E4FF5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8005C128228996E30071A344;
+			remoteInfo = Soup;
+		};
 		80186D9D227F0A4F00B27198 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8088BF0E227ECA1600E4FF5A /* Project object */;
@@ -68,6 +94,8 @@
 			dstSubfolderSpec = 13;
 			files = (
 				80186D9F227F0A4F00B27198 /* NotificationContentExtension.appex in Embed App Extensions */,
+				8005C140228996E40071A344 /* Soup.appex in Embed App Extensions */,
+				8005C13D228996E40071A344 /* SoupUI.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +103,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8005C129228996E30071A344 /* Soup.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Soup.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8005C12B228996E30071A344 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		8005C12D228996E30071A344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8005C132228996E40071A344 /* SoupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SoupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8005C135228996E40071A344 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		8005C138228996E40071A344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		8005C13A228996E40071A344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8005C169228AA9C60071A344 /* ShortcutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutsViewController.swift; sourceTree = "<group>"; };
+		8005C18B228AB7740071A344 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		8005C18D228AB8B90071A344 /* ShortcutsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShortcutsViewController.xib; sourceTree = "<group>"; };
+		8005C18F228ABC530071A344 /* Soup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Soup.png; sourceTree = "<group>"; };
+		8005C193228AC4BF0071A344 /* iOS12.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS12.entitlements; sourceTree = "<group>"; };
 		80186D90227F0A4F00B27198 /* NotificationContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		80186D92227F0A4F00B27198 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		80186D94227F0A4F00B27198 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
@@ -95,6 +135,7 @@
 		80186E342282789000B27198 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		80186E352282789000B27198 /* ToastCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastCenter.swift; sourceTree = "<group>"; };
 		80186E3E228400A400B27198 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		802DEF962289633800989E30 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		8088BF16227ECA1600E4FF5A /* iOS12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8088BF19227ECA1600E4FF5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8088BF1B227ECA1600E4FF5A /* NaturalLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturalLanguageViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +153,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8005C126228996E30071A344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8005C12F228996E30071A344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8005C133228996E40071A344 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80186D8D227F0A4F00B27198 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,11 +201,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8005C12A228996E30071A344 /* Soup */ = {
+			isa = PBXGroup;
+			children = (
+				8005C12B228996E30071A344 /* IntentHandler.swift */,
+				8005C12D228996E30071A344 /* Info.plist */,
+			);
+			path = Soup;
+			sourceTree = "<group>";
+		};
+		8005C134228996E40071A344 /* SoupUI */ = {
+			isa = PBXGroup;
+			children = (
+				8005C135228996E40071A344 /* IntentViewController.swift */,
+				8005C137228996E40071A344 /* MainInterface.storyboard */,
+				8005C13A228996E40071A344 /* Info.plist */,
+			);
+			path = SoupUI;
+			sourceTree = "<group>";
+		};
+		8005C168228AA9C60071A344 /* Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				8005C169228AA9C60071A344 /* ShortcutsViewController.swift */,
+				8005C18D228AB8B90071A344 /* ShortcutsViewController.xib */,
+				8005C18B228AB7740071A344 /* Intents.intentdefinition */,
+			);
+			path = Shortcuts;
+			sourceTree = "<group>";
+		};
 		80186D91227F0A4F00B27198 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				80186D92227F0A4F00B27198 /* UserNotifications.framework */,
 				80186D94227F0A4F00B27198 /* UserNotificationsUI.framework */,
+				802DEF962289633800989E30 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -193,6 +279,8 @@
 				8088BF2D227ECA1700E4FF5A /* iOS12Tests */,
 				8088BF38227ECA1700E4FF5A /* iOS12UITests */,
 				80186D96227F0A4F00B27198 /* NotificationContentExtension */,
+				8005C12A228996E30071A344 /* Soup */,
+				8005C134228996E40071A344 /* SoupUI */,
 				80186D91227F0A4F00B27198 /* Frameworks */,
 				8088BF17227ECA1600E4FF5A /* Products */,
 			);
@@ -205,6 +293,8 @@
 				8088BF2A227ECA1700E4FF5A /* iOS12Tests.xctest */,
 				8088BF35227ECA1700E4FF5A /* iOS12UITests.xctest */,
 				80186D90227F0A4F00B27198 /* NotificationContentExtension.appex */,
+				8005C129228996E30071A344 /* Soup.appex */,
+				8005C132228996E40071A344 /* SoupUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,6 +302,7 @@
 		8088BF18227ECA1600E4FF5A /* iOS12 */ = {
 			isa = PBXGroup;
 			children = (
+				8005C193228AC4BF0071A344 /* iOS12.entitlements */,
 				80186E2F2282789000B27198 /* third */,
 				8088BF19227ECA1600E4FF5A /* AppDelegate.swift */,
 				8088BF47227ECA7500E4FF5A /* MainViewController.swift */,
@@ -223,8 +314,10 @@
 				80186E2922819E4400B27198 /* NetworkViewController.swift */,
 				80186E2A22819E4400B27198 /* NetworkViewController.xib */,
 				8088BF1D227ECA1600E4FF5A /* Main.storyboard */,
+				8005C168228AA9C60071A344 /* Shortcuts */,
 				8088BF20227ECA1700E4FF5A /* Assets.xcassets */,
 				80186DAF22800AB300B27198 /* attachment.png */,
+				8005C18F228ABC530071A344 /* Soup.png */,
 				8088BF22227ECA1700E4FF5A /* LaunchScreen.storyboard */,
 				8088BF25227ECA1700E4FF5A /* Info.plist */,
 			);
@@ -252,6 +345,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8005C128228996E30071A344 /* Soup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8005C144228996E40071A344 /* Build configuration list for PBXNativeTarget "Soup" */;
+			buildPhases = (
+				8005C125228996E30071A344 /* Sources */,
+				8005C126228996E30071A344 /* Frameworks */,
+				8005C127228996E30071A344 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Soup;
+			productName = Soup;
+			productReference = 8005C129228996E30071A344 /* Soup.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8005C131228996E30071A344 /* SoupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8005C141228996E40071A344 /* Build configuration list for PBXNativeTarget "SoupUI" */;
+			buildPhases = (
+				8005C12E228996E30071A344 /* Sources */,
+				8005C12F228996E30071A344 /* Frameworks */,
+				8005C130228996E30071A344 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoupUI;
+			productName = SoupUI;
+			productReference = 8005C132228996E40071A344 /* SoupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		80186D8F227F0A4F00B27198 /* NotificationContentExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80186DA2227F0A4F00B27198 /* Build configuration list for PBXNativeTarget "NotificationContentExtension" */;
@@ -282,6 +409,8 @@
 			);
 			dependencies = (
 				80186D9E227F0A4F00B27198 /* PBXTargetDependency */,
+				8005C13C228996E40071A344 /* PBXTargetDependency */,
+				8005C13F228996E40071A344 /* PBXTargetDependency */,
 			);
 			name = iOS12;
 			productName = iOS12;
@@ -334,11 +463,22 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = cxy;
 				TargetAttributes = {
+					8005C128228996E30071A344 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					8005C131228996E30071A344 = {
+						CreatedOnToolsVersion = 10.2;
+					};
 					80186D8F227F0A4F00B27198 = {
 						CreatedOnToolsVersion = 10.2;
 					};
 					8088BF15227ECA1600E4FF5A = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					8088BF29227ECA1700E4FF5A = {
 						CreatedOnToolsVersion = 10.2;
@@ -367,11 +507,28 @@
 				8088BF29227ECA1700E4FF5A /* iOS12Tests */,
 				8088BF34227ECA1700E4FF5A /* iOS12UITests */,
 				80186D8F227F0A4F00B27198 /* NotificationContentExtension */,
+				8005C128228996E30071A344 /* Soup */,
+				8005C131228996E30071A344 /* SoupUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8005C127228996E30071A344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8005C130228996E30071A344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8005C139228996E40071A344 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80186D8E227F0A4F00B27198 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,8 +546,10 @@
 			files = (
 				8088BF24227ECA1700E4FF5A /* LaunchScreen.storyboard in Resources */,
 				80186DA7227F0B3D00B27198 /* CustomNotificationUIViewController.xib in Resources */,
+				8005C190228ABC540071A344 /* Soup.png in Resources */,
 				8088BF21227ECA1700E4FF5A /* Assets.xcassets in Resources */,
 				80186DB022800AB400B27198 /* attachment.png in Resources */,
+				8005C18E228AB8B90071A344 /* ShortcutsViewController.xib in Resources */,
 				8088BF1F227ECA1600E4FF5A /* Main.storyboard in Resources */,
 				80186E2C22819E4400B27198 /* NetworkViewController.xib in Resources */,
 			);
@@ -413,6 +572,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8005C125228996E30071A344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8005C191228AC0660071A344 /* Intents.intentdefinition in Sources */,
+				8005C12C228996E30071A344 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8005C12E228996E30071A344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8005C192228AC0670071A344 /* Intents.intentdefinition in Sources */,
+				8005C136228996E40071A344 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80186D8C227F0A4F00B27198 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -434,7 +611,9 @@
 				80186E362282789000B27198 /* ToastWindow.swift in Sources */,
 				80186DA5227F0B1C00B27198 /* CustomNotificationUIViewController.swift in Sources */,
 				80186E382282789000B27198 /* Toast.swift in Sources */,
+				8005C177228AA9C60071A344 /* ShortcutsViewController.swift in Sources */,
 				80186E392282789000B27198 /* ToastCenter.swift in Sources */,
+				8005C18C228AB7740071A344 /* Intents.intentdefinition in Sources */,
 				8088BF1A227ECA1600E4FF5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +637,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8005C13C228996E40071A344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8005C131228996E30071A344 /* SoupUI */;
+			targetProxy = 8005C13B228996E40071A344 /* PBXContainerItemProxy */;
+		};
+		8005C13F228996E40071A344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8005C128228996E30071A344 /* Soup */;
+			targetProxy = 8005C13E228996E40071A344 /* PBXContainerItemProxy */;
+		};
 		80186D9E227F0A4F00B27198 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 80186D8F227F0A4F00B27198 /* NotificationContentExtension */;
@@ -476,6 +665,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8005C137228996E40071A344 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8005C138228996E40071A344 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		80186D99227F0A4F00B27198 /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -503,11 +700,87 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8005C142228996E40071A344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = SoupUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubtechinc.iOS12.SoupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8005C143228996E40071A344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = SoupUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubtechinc.iOS12.SoupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8005C145228996E40071A344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = Soup/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubtechinc.iOS12.Soup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8005C146228996E40071A344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = Soup/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubtechinc.iOS12.Soup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		80186DA0227F0A4F00B27198 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VR2SEUVSU3;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = NotificationContentExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -515,7 +788,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cxy.iOS12.NotificationContentExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubtechinc.iOS12.NotificationContentExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -527,7 +800,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VR2SEUVSU3;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = NotificationContentExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -535,7 +808,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cxy.iOS12.NotificationContentExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubtechinc.iOS12.NotificationContentExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -664,15 +937,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iOS12/iOS12.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VR2SEUVSU3;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = iOS12/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cxy.iOS12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubtechinc.iOS12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -684,15 +958,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iOS12/iOS12.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VR2SEUVSU3;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = iOS12/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cxy.iOS12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubtechinc.iOS12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -784,6 +1059,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8005C141228996E40071A344 /* Build configuration list for PBXNativeTarget "SoupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8005C142228996E40071A344 /* Debug */,
+				8005C143228996E40071A344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8005C144228996E40071A344 /* Build configuration list for PBXNativeTarget "Soup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8005C145228996E40071A344 /* Debug */,
+				8005C146228996E40071A344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		80186DA2227F0A4F00B27198 /* Build configuration list for PBXNativeTarget "NotificationContentExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

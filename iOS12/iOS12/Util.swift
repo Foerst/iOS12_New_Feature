@@ -12,14 +12,14 @@ class Util: NSObject {
     class func dataFromUint8(_ value: UInt8) -> Data {
         var byteArray: [UInt8] = [0]
         byteArray[0] = value & 0xff
-        return Data(bytes: byteArray)
+        return Data(byteArray)
     }
     
     class func dataFromUint16(_ value: UInt16) -> Data {
         var byteArray: [UInt8] = [0, 0]
         byteArray[0] = UInt8(value >> 8 & 0xff)
         byteArray[1] = UInt8(value & 0xff)
-        return Data(bytes: byteArray)
+        return Data(byteArray)
     }
     
     class func dataFromUint32(_ value: UInt32) -> Data {
@@ -30,7 +30,7 @@ class Util: NSObject {
         byteArray[1] = UInt8(value >> 16 & 0xff)
         byteArray[0] = UInt8(value >> 24 & 0xff)
         
-        return Data(bytes: byteArray)
+        return Data(byteArray)
         
         /*var bigEndian = value.bigEndian
          let count = MemoryLayout<UInt32>.size

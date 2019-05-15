@@ -74,6 +74,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+        alert.title = userActivity.activityType
+        alert.addAction(UIAlertAction(title: "确定", style: .cancel, handler: nil))
+        
+        if userActivity.activityType == activityType {
+            alert.message = "UserActivity 唤醒 app"
+        } else if userActivity.activityType == NSStringFromClass(OrderSoupIntent.self) {
+            let intent = (userActivity.interaction?.intent as! OrderSoupIntent)
+            let soup = intent.soup ?? "error"
+            let quantity = intent.quantity ?? -1
+            alert.message = "点\(quantity)份\(soup)"
+        }
+        
+        window?.rootViewController?.present(alert, animated: true, completion: nil)
+        
+        return true
+    }
 
 
 }

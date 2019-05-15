@@ -52,6 +52,8 @@ class MainViewController: UITableViewController {
             navigationController?.pushViewController(NetworkViewController(), animated: true)
         } else if 2 == indexPath.row {
             navigationController?.pushViewController(CustomNotificationUIViewController(), animated: true)
+        } else if 1 == indexPath.row {
+            navigationController?.pushViewController(ShortcutsViewController(), animated: true)
         }
     }
 
