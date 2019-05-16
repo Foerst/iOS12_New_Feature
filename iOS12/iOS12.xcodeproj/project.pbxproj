@@ -19,7 +19,11 @@
 		8005C190228ABC540071A344 /* Soup.png in Resources */ = {isa = PBXBuildFile; fileRef = 8005C18F228ABC530071A344 /* Soup.png */; };
 		8005C191228AC0660071A344 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8005C18B228AB7740071A344 /* Intents.intentdefinition */; };
 		8005C192228AC0670071A344 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8005C18B228AB7740071A344 /* Intents.intentdefinition */; };
-		8005C195228D31020071A344 /* Toast+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C194228D31020071A344 /* Toast+Custom.swift */; };
+		8005C1A4228D82730071A344 /* Toast+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C1A3228D82730071A344 /* Toast+Custom.swift */; };
+		8005C1A9228D82E10071A344 /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C1A5228D82E00071A344 /* ToastCenter.swift */; };
+		8005C1AA228D82E10071A344 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C1A6228D82E00071A344 /* ToastView.swift */; };
+		8005C1AB228D82E10071A344 /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C1A7228D82E00071A344 /* ToastWindow.swift */; };
+		8005C1AC228D82E10071A344 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C1A8228D82E00071A344 /* Toast.swift */; };
 		80186D93227F0A4F00B27198 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80186D92227F0A4F00B27198 /* UserNotifications.framework */; };
 		80186D95227F0A4F00B27198 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80186D94227F0A4F00B27198 /* UserNotificationsUI.framework */; };
 		80186D98227F0A4F00B27198 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186D97227F0A4F00B27198 /* NotificationViewController.swift */; };
@@ -34,10 +38,6 @@
 		80186E2822819CA500B27198 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186E2622818BE300B27198 /* NetworkManager.swift */; };
 		80186E2B22819E4400B27198 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186E2922819E4400B27198 /* NetworkViewController.swift */; };
 		80186E2C22819E4400B27198 /* NetworkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80186E2A22819E4400B27198 /* NetworkViewController.xib */; };
-		80186E362282789000B27198 /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186E312282789000B27198 /* ToastWindow.swift */; };
-		80186E372282789000B27198 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186E322282789000B27198 /* ToastView.swift */; };
-		80186E382282789000B27198 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186E342282789000B27198 /* Toast.swift */; };
-		80186E392282789000B27198 /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186E352282789000B27198 /* ToastCenter.swift */; };
 		80186E3F228400A400B27198 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186E3E228400A400B27198 /* Util.swift */; };
 		8088BF1A227ECA1600E4FF5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088BF19227ECA1600E4FF5A /* AppDelegate.swift */; };
 		8088BF1C227ECA1600E4FF5A /* NaturalLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088BF1B227ECA1600E4FF5A /* NaturalLanguageViewController.swift */; };
@@ -116,7 +116,11 @@
 		8005C18D228AB8B90071A344 /* ShortcutsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShortcutsViewController.xib; sourceTree = "<group>"; };
 		8005C18F228ABC530071A344 /* Soup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Soup.png; sourceTree = "<group>"; };
 		8005C193228AC4BF0071A344 /* iOS12.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS12.entitlements; sourceTree = "<group>"; };
-		8005C194228D31020071A344 /* Toast+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Toast+Custom.swift"; sourceTree = "<group>"; };
+		8005C1A3228D82730071A344 /* Toast+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Toast+Custom.swift"; path = "Shared/Toast+Custom.swift"; sourceTree = "<group>"; };
+		8005C1A5228D82E00071A344 /* ToastCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToastCenter.swift; path = Shared/ToastCenter.swift; sourceTree = "<group>"; };
+		8005C1A6228D82E00071A344 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToastView.swift; path = Shared/ToastView.swift; sourceTree = "<group>"; };
+		8005C1A7228D82E00071A344 /* ToastWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToastWindow.swift; path = Shared/ToastWindow.swift; sourceTree = "<group>"; };
+		8005C1A8228D82E00071A344 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Shared/Toast.swift; sourceTree = "<group>"; };
 		80186D90227F0A4F00B27198 /* NotificationContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		80186D92227F0A4F00B27198 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		80186D94227F0A4F00B27198 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
@@ -131,11 +135,6 @@
 		80186E2622818BE300B27198 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		80186E2922819E4400B27198 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
 		80186E2A22819E4400B27198 /* NetworkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkViewController.xib; sourceTree = "<group>"; };
-		80186E312282789000B27198 /* ToastWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastWindow.swift; sourceTree = "<group>"; };
-		80186E322282789000B27198 /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
-		80186E332282789000B27198 /* Toaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toaster.h; sourceTree = "<group>"; };
-		80186E342282789000B27198 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
-		80186E352282789000B27198 /* ToastCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastCenter.swift; sourceTree = "<group>"; };
 		80186E3E228400A400B27198 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		802DEF962289633800989E30 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		8088BF16227ECA1600E4FF5A /* iOS12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS12.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,29 +253,14 @@
 			path = NotificationContentExtension;
 			sourceTree = "<group>";
 		};
-		80186E2F2282789000B27198 /* third */ = {
-			isa = PBXGroup;
-			children = (
-				80186E302282789000B27198 /* Toast */,
-			);
-			path = third;
-			sourceTree = "<group>";
-		};
-		80186E302282789000B27198 /* Toast */ = {
-			isa = PBXGroup;
-			children = (
-				80186E312282789000B27198 /* ToastWindow.swift */,
-				80186E322282789000B27198 /* ToastView.swift */,
-				80186E332282789000B27198 /* Toaster.h */,
-				80186E342282789000B27198 /* Toast.swift */,
-				80186E352282789000B27198 /* ToastCenter.swift */,
-			);
-			path = Toast;
-			sourceTree = "<group>";
-		};
 		8088BF0D227ECA1600E4FF5A = {
 			isa = PBXGroup;
 			children = (
+				8005C1A8228D82E00071A344 /* Toast.swift */,
+				8005C1A5228D82E00071A344 /* ToastCenter.swift */,
+				8005C1A6228D82E00071A344 /* ToastView.swift */,
+				8005C1A7228D82E00071A344 /* ToastWindow.swift */,
+				8005C1A3228D82730071A344 /* Toast+Custom.swift */,
 				8088BF18227ECA1600E4FF5A /* iOS12 */,
 				8088BF2D227ECA1700E4FF5A /* iOS12Tests */,
 				8088BF38227ECA1700E4FF5A /* iOS12UITests */,
@@ -305,7 +289,6 @@
 			isa = PBXGroup;
 			children = (
 				8005C193228AC4BF0071A344 /* iOS12.entitlements */,
-				80186E2F2282789000B27198 /* third */,
 				8088BF19227ECA1600E4FF5A /* AppDelegate.swift */,
 				8088BF47227ECA7500E4FF5A /* MainViewController.swift */,
 				8088BF1B227ECA1600E4FF5A /* NaturalLanguageViewController.swift */,
@@ -314,7 +297,6 @@
 				80186E2622818BE300B27198 /* NetworkManager.swift */,
 				80186E3E228400A400B27198 /* Util.swift */,
 				80186E2922819E4400B27198 /* NetworkViewController.swift */,
-				8005C194228D31020071A344 /* Toast+Custom.swift */,
 				80186E2A22819E4400B27198 /* NetworkViewController.xib */,
 				8088BF1D227ECA1600E4FF5A /* Main.storyboard */,
 				8005C168228AA9C60071A344 /* Shortcuts */,
@@ -605,19 +587,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8005C1A9228D82E10071A344 /* ToastCenter.swift in Sources */,
+				8005C1AA228D82E10071A344 /* ToastView.swift in Sources */,
+				8005C1AB228D82E10071A344 /* ToastWindow.swift in Sources */,
+				8005C1AC228D82E10071A344 /* Toast.swift in Sources */,
+				8005C1A4228D82730071A344 /* Toast+Custom.swift in Sources */,
 				80186E3F228400A400B27198 /* Util.swift in Sources */,
-				80186E372282789000B27198 /* ToastView.swift in Sources */,
 				80186E2822819CA500B27198 /* NetworkManager.swift in Sources */,
 				80186E2B22819E4400B27198 /* NetworkViewController.swift in Sources */,
 				8088BF48227ECA7500E4FF5A /* MainViewController.swift in Sources */,
 				8088BF1C227ECA1600E4FF5A /* NaturalLanguageViewController.swift in Sources */,
-				80186E362282789000B27198 /* ToastWindow.swift in Sources */,
 				80186DA5227F0B1C00B27198 /* CustomNotificationUIViewController.swift in Sources */,
-				80186E382282789000B27198 /* Toast.swift in Sources */,
 				8005C177228AA9C60071A344 /* ShortcutsViewController.swift in Sources */,
-				80186E392282789000B27198 /* ToastCenter.swift in Sources */,
 				8005C18C228AB7740071A344 /* Intents.intentdefinition in Sources */,
-				8005C195228D31020071A344 /* Toast+Custom.swift in Sources */,
 				8088BF1A227ECA1600E4FF5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

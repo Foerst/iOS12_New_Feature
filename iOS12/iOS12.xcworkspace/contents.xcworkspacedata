@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "container:"
+      name = "Shared">
+      <FileRef
+         location = "group:Shared/Toast.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Shared/ToastCenter.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Shared/Toaster.h">
+      </FileRef>
+      <FileRef
+         location = "group:Shared/ToastView.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Shared/ToastWindow.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Shared/Toast+Custom.swift">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:UDPClient/UDPClient.xcodeproj">
    </FileRef>

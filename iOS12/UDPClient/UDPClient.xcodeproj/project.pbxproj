@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8005C197228D33080071A344 /* Toast+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C196228D33080071A344 /* Toast+Custom.swift */; };
+		8005C1B2228D83480071A344 /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C1AD228D83470071A344 /* ToastWindow.swift */; };
+		8005C1B3228D83480071A344 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C1AE228D83470071A344 /* Toast.swift */; };
+		8005C1B4228D83480071A344 /* Toast+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C1AF228D83480071A344 /* Toast+Custom.swift */; };
+		8005C1B5228D83480071A344 /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C1B0228D83480071A344 /* ToastCenter.swift */; };
+		8005C1B6228D83480071A344 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C1B1228D83480071A344 /* ToastView.swift */; };
 		80186DF722817F8B00B27198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186DF622817F8B00B27198 /* AppDelegate.swift */; };
 		80186DF922817F8B00B27198 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186DF822817F8B00B27198 /* ViewController.swift */; };
 		80186DFC22817F8B00B27198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80186DFA22817F8B00B27198 /* Main.storyboard */; };
@@ -16,10 +20,6 @@
 		80186E0C22817F8C00B27198 /* UDPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186E0B22817F8C00B27198 /* UDPClientTests.swift */; };
 		80186E1722817F8C00B27198 /* UDPClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186E1622817F8C00B27198 /* UDPClientUITests.swift */; };
 		80186E25228182F200B27198 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186E24228182F200B27198 /* ServiceManager.swift */; };
-		80186E46228400F700B27198 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186E42228400F700B27198 /* ToastView.swift */; };
-		80186E47228400F700B27198 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186E43228400F700B27198 /* Toast.swift */; };
-		80186E48228400F700B27198 /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186E44228400F700B27198 /* ToastCenter.swift */; };
-		80186E49228400F700B27198 /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186E45228400F700B27198 /* ToastWindow.swift */; };
 		80186E4B228401DA00B27198 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186E4A228401DA00B27198 /* Util.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8005C196228D33080071A344 /* Toast+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Toast+Custom.swift"; path = "../../iOS12/Toast+Custom.swift"; sourceTree = "<group>"; };
+		8005C1AD228D83470071A344 /* ToastWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToastWindow.swift; path = ../Shared/ToastWindow.swift; sourceTree = "<group>"; };
+		8005C1AE228D83470071A344 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = ../Shared/Toast.swift; sourceTree = "<group>"; };
+		8005C1AF228D83480071A344 /* Toast+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Toast+Custom.swift"; path = "../Shared/Toast+Custom.swift"; sourceTree = "<group>"; };
+		8005C1B0228D83480071A344 /* ToastCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToastCenter.swift; path = ../Shared/ToastCenter.swift; sourceTree = "<group>"; };
+		8005C1B1228D83480071A344 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToastView.swift; path = ../Shared/ToastView.swift; sourceTree = "<group>"; };
 		80186DF322817F8B00B27198 /* UDPClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDPClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80186DF622817F8B00B27198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80186DF822817F8B00B27198 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,10 +60,6 @@
 		80186E1622817F8C00B27198 /* UDPClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPClientUITests.swift; sourceTree = "<group>"; };
 		80186E1822817F8C00B27198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80186E24228182F200B27198 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
-		80186E42228400F700B27198 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
-		80186E43228400F700B27198 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
-		80186E44228400F700B27198 /* ToastCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastCenter.swift; sourceTree = "<group>"; };
-		80186E45228400F700B27198 /* ToastWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastWindow.swift; sourceTree = "<group>"; };
 		80186E4A228401DA00B27198 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +91,11 @@
 		80186DEA22817F8B00B27198 = {
 			isa = PBXGroup;
 			children = (
+				8005C1AE228D83470071A344 /* Toast.swift */,
+				8005C1AF228D83480071A344 /* Toast+Custom.swift */,
+				8005C1B0228D83480071A344 /* ToastCenter.swift */,
+				8005C1B1228D83480071A344 /* ToastView.swift */,
+				8005C1AD228D83470071A344 /* ToastWindow.swift */,
 				80186DF522817F8B00B27198 /* UDPClient */,
 				80186E0A22817F8C00B27198 /* UDPClientTests */,
 				80186E1522817F8C00B27198 /* UDPClientUITests */,
@@ -118,12 +123,7 @@
 				80186DFD22817F8C00B27198 /* Assets.xcassets */,
 				80186DFF22817F8C00B27198 /* LaunchScreen.storyboard */,
 				80186E0222817F8C00B27198 /* Info.plist */,
-				80186E45228400F700B27198 /* ToastWindow.swift */,
-				80186E42228400F700B27198 /* ToastView.swift */,
-				80186E44228400F700B27198 /* ToastCenter.swift */,
-				80186E43228400F700B27198 /* Toast.swift */,
 				80186E4A228401DA00B27198 /* Util.swift */,
-				8005C196228D33080071A344 /* Toast+Custom.swift */,
 			);
 			path = UDPClient;
 			sourceTree = "<group>";
@@ -277,15 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80186E46228400F700B27198 /* ToastView.swift in Sources */,
-				80186E47228400F700B27198 /* Toast.swift in Sources */,
-				80186E48228400F700B27198 /* ToastCenter.swift in Sources */,
+				8005C1B2228D83480071A344 /* ToastWindow.swift in Sources */,
+				8005C1B3228D83480071A344 /* Toast.swift in Sources */,
+				8005C1B4228D83480071A344 /* Toast+Custom.swift in Sources */,
+				8005C1B5228D83480071A344 /* ToastCenter.swift in Sources */,
+				8005C1B6228D83480071A344 /* ToastView.swift in Sources */,
 				80186E4B228401DA00B27198 /* Util.swift in Sources */,
-				80186E49228400F700B27198 /* ToastWindow.swift in Sources */,
 				80186DF922817F8B00B27198 /* ViewController.swift in Sources */,
 				80186DF722817F8B00B27198 /* AppDelegate.swift in Sources */,
 				80186E25228182F200B27198 /* ServiceManager.swift in Sources */,
-				8005C197228D33080071A344 /* Toast+Custom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
