@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8005C197228D33080071A344 /* Toast+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C196228D33080071A344 /* Toast+Custom.swift */; };
 		80186DF722817F8B00B27198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186DF622817F8B00B27198 /* AppDelegate.swift */; };
 		80186DF922817F8B00B27198 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186DF822817F8B00B27198 /* ViewController.swift */; };
 		80186DFC22817F8B00B27198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80186DFA22817F8B00B27198 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8005C196228D33080071A344 /* Toast+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Toast+Custom.swift"; path = "../../iOS12/Toast+Custom.swift"; sourceTree = "<group>"; };
 		80186DF322817F8B00B27198 /* UDPClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDPClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80186DF622817F8B00B27198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80186DF822817F8B00B27198 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				80186E44228400F700B27198 /* ToastCenter.swift */,
 				80186E43228400F700B27198 /* Toast.swift */,
 				80186E4A228401DA00B27198 /* Util.swift */,
+				8005C196228D33080071A344 /* Toast+Custom.swift */,
 			);
 			path = UDPClient;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				80186DF922817F8B00B27198 /* ViewController.swift in Sources */,
 				80186DF722817F8B00B27198 /* AppDelegate.swift in Sources */,
 				80186E25228182F200B27198 /* ServiceManager.swift in Sources */,
+				8005C197228D33080071A344 /* Toast+Custom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,13 +461,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VR2SEUVSU3;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = UDPClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cxy.UDPClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubtechinc.UDPClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -475,13 +480,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VR2SEUVSU3;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = UDPClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cxy.UDPClient;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ubtechinc.UDPClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
