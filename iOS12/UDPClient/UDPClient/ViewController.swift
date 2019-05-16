@@ -17,11 +17,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         ServiceManager.shared.publishService { (ret) in
             if ret {
-                let toast = Toast(text: "service publish succeed!")
-                toast.view.bottomOffsetPortrait = (UIScreen.main.bounds.height-20)/2
-                toast.show()
+                Toast.toast(text: "service publish succeed!").show()
             } else {
-                Toast(text: "service publish error!").show()
+                Toast.toast(text: "service publish error!").show()
             }
             
         }

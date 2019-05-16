@@ -19,6 +19,7 @@
 		8005C190228ABC540071A344 /* Soup.png in Resources */ = {isa = PBXBuildFile; fileRef = 8005C18F228ABC530071A344 /* Soup.png */; };
 		8005C191228AC0660071A344 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8005C18B228AB7740071A344 /* Intents.intentdefinition */; };
 		8005C192228AC0670071A344 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8005C18B228AB7740071A344 /* Intents.intentdefinition */; };
+		8005C195228D31020071A344 /* Toast+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8005C194228D31020071A344 /* Toast+Custom.swift */; };
 		80186D93227F0A4F00B27198 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80186D92227F0A4F00B27198 /* UserNotifications.framework */; };
 		80186D95227F0A4F00B27198 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80186D94227F0A4F00B27198 /* UserNotificationsUI.framework */; };
 		80186D98227F0A4F00B27198 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80186D97227F0A4F00B27198 /* NotificationViewController.swift */; };
@@ -115,6 +116,7 @@
 		8005C18D228AB8B90071A344 /* ShortcutsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShortcutsViewController.xib; sourceTree = "<group>"; };
 		8005C18F228ABC530071A344 /* Soup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Soup.png; sourceTree = "<group>"; };
 		8005C193228AC4BF0071A344 /* iOS12.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS12.entitlements; sourceTree = "<group>"; };
+		8005C194228D31020071A344 /* Toast+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Toast+Custom.swift"; sourceTree = "<group>"; };
 		80186D90227F0A4F00B27198 /* NotificationContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		80186D92227F0A4F00B27198 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		80186D94227F0A4F00B27198 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
@@ -312,6 +314,7 @@
 				80186E2622818BE300B27198 /* NetworkManager.swift */,
 				80186E3E228400A400B27198 /* Util.swift */,
 				80186E2922819E4400B27198 /* NetworkViewController.swift */,
+				8005C194228D31020071A344 /* Toast+Custom.swift */,
 				80186E2A22819E4400B27198 /* NetworkViewController.xib */,
 				8088BF1D227ECA1600E4FF5A /* Main.storyboard */,
 				8005C168228AA9C60071A344 /* Shortcuts */,
@@ -614,6 +617,7 @@
 				8005C177228AA9C60071A344 /* ShortcutsViewController.swift in Sources */,
 				80186E392282789000B27198 /* ToastCenter.swift in Sources */,
 				8005C18C228AB7740071A344 /* Intents.intentdefinition in Sources */,
+				8005C195228D31020071A344 /* Toast+Custom.swift in Sources */,
 				8088BF1A227ECA1600E4FF5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

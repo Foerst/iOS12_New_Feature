@@ -23,11 +23,9 @@ class NetworkViewController: UIViewController {
     @IBAction func connectService() {
         NetworkManager.shared.connectService { (ret, error) in
             if ret {
-                let toast = Toast(text: "Connect Succeed!")
-                toast.view.bottomOffsetPortrait = (UIScreen.main.bounds.height-20)/2
-                toast.show()
+                Toast.toast(text: "Connect Succeed!").show()
             } else {
-                Toast(text: error ?? "Connecting Failed!").show()
+                Toast.toast(text: error ?? "Connecting Failed!").show()
             }
         }
     }
