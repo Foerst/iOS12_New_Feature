@@ -23,9 +23,9 @@ class NetworkViewController: UIViewController {
     @IBAction func connectService() {
         NetworkManager.shared.connectService { (ret, error) in
             if ret {
-                Toast.toast(text: "Connect Succeed!").show()
+                Toast.make(text: "Connect Succeed!").show()
             } else {
-                Toast.toast(text: error ?? "Connecting Failed!").show()
+                Toast.make(text: error ?? "Connecting Failed!").show()
             }
         }
     }

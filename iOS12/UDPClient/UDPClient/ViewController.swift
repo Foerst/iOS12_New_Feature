@@ -20,9 +20,9 @@ class ViewController: UIViewController {
         
         ServiceManager.shared.publishService { (ret) in
             if ret {
-                Toast.toast(text: "service publish succeed!").show()
+                Toast.make(text: "service publish succeed!").show()
             } else {
-                Toast.toast(text: "service publish error!").show()
+                Toast.make(text: "service publish error!").show()
             }
         }
         

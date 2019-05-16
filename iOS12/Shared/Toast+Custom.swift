@@ -9,7 +9,7 @@
 import UIKit
 
 extension Toast {
-    static func toast(text: String) -> Toast {
+    static func make(text: String) -> Toast {
         let toast = Toast(text: text)
         toast.view.bottomOffsetPortrait = (UIScreen.main.bounds.height-20)/2
         return toast
