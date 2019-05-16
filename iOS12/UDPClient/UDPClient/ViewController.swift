@@ -10,19 +10,22 @@ import UIKit
 import Network
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var label: UILabel!
+    
     @IBOutlet weak var image: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         ServiceManager.shared.publishService { (ret) in
             if ret {
                 Toast.toast(text: "service publish succeed!").show()
             } else {
                 Toast.toast(text: "service publish error!").show()
             }
-            
         }
+        
         ServiceManager.shared.onReceiveData = { data in
             if let text = String(data: data!, encoding: .utf8) {
                 self.label.text = text
@@ -30,7 +33,6 @@ class ViewController: UIViewController {
             if let image = UIImage(data: data!) {
                 self.image.image = image
             }
-           
         }
     }
     
