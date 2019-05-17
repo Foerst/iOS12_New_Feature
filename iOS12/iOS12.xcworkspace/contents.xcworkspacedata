@@ -8,6 +8,6 @@
       location = "group:UDPClient/UDPClient.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:iOS12.xcodeproj">
+      location = "group:iOS12/iOS12.xcodeproj">
    </FileRef>
 </Workspace>
