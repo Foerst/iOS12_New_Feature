@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Util
 
 class NetworkViewController: UIViewController {
     @IBOutlet weak var serviceLb: UILabel!

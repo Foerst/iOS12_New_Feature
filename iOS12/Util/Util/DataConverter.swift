@@ -8,21 +8,21 @@
 
 import Foundation
 
-class Util: NSObject {
-    class func dataFromUint8(_ value: UInt8) -> Data {
+public class DataConverter: NSObject {
+    public class func dataFromUint8(_ value: UInt8) -> Data {
         var byteArray: [UInt8] = [0]
         byteArray[0] = value & 0xff
         return Data(byteArray)
     }
     
-    class func dataFromUint16(_ value: UInt16) -> Data {
+    public class func dataFromUint16(_ value: UInt16) -> Data {
         var byteArray: [UInt8] = [0, 0]
         byteArray[0] = UInt8(value >> 8 & 0xff)
         byteArray[1] = UInt8(value & 0xff)
         return Data(byteArray)
     }
     
-    class func dataFromUint32(_ value: UInt32) -> Data {
+    public class func dataFromUint32(_ value: UInt32) -> Data {
         var byteArray: [UInt8] = [0, 0, 0, 0]
         
         byteArray[3] = UInt8(value & 0xff)
@@ -44,14 +44,14 @@ class Util: NSObject {
          return Data(bytes: xxArray)*/
     }
     
-    class func dataFromString(_ value: String) -> Data {
+    public class func dataFromString(_ value: String) -> Data {
         var tempString = String(value)
         tempString.append("\0")
         let data: Data = value.data(using: .utf8)!
         return data
     }
     
-    class func uint8FromData(_ data: Data) -> UInt8 {
+    public class func uint8FromData(_ data: Data) -> UInt8 {
         var byteArray: [UInt8] = [0]
         let bytePtr = UnsafeMutableBufferPointer<UInt8>(start: &byteArray, count: byteArray.count)
         _ = data.copyBytes(to: bytePtr)
@@ -59,7 +59,7 @@ class Util: NSObject {
         return UInt8(bytePtr[0]) & 0xff
     }
     
-    class func uint16FromData(_ data: Data) -> UInt16 {
+    public class func uint16FromData(_ data: Data) -> UInt16 {
         var byteArray: [UInt8] = [0, 0]
         let bytePtr = UnsafeMutableBufferPointer<UInt8>(start: &byteArray, count: byteArray.count)
         _ = data.copyBytes(to: bytePtr)
@@ -67,7 +67,7 @@ class Util: NSObject {
         return (UInt16((bytePtr[1] & 0xff)) << 0) + (UInt16((bytePtr[0] & 0xff)) << 8)
     }
     
-    class func uint32FromData(_ data: Data) -> UInt32 {
+    public class func uint32FromData(_ data: Data) -> UInt32 {
         var byteArray: [UInt8] = [0, 0, 0, 0]
         let bytePtr = UnsafeMutableBufferPointer<UInt8>(start: &byteArray, count: byteArray.count)
         _ = data.copyBytes(to: bytePtr)
@@ -80,14 +80,14 @@ class Util: NSObject {
         return result
     }
     
-    class func stringFromData(_ data: Data) -> String {
+    public class func stringFromData(_ data: Data) -> String {
         guard data.count == 0 else {
             return String(data: data, encoding: .utf8)!
         }
         return String()
     }
     
-    class func uint8ArrayFromData(_ data: Data) -> [UInt8] {
+    public class func uint8ArrayFromData(_ data: Data) -> [UInt8] {
         return [UInt8](data)
     }
     
@@ -103,7 +103,7 @@ class Util: NSObject {
         return true
     }
     
-    class func UInt8ArrayFromAsciiHexString(_ hexString: String) -> [UInt8]? {
+    public class func UInt8ArrayFromAsciiHexString(_ hexString: String) -> [UInt8]? {
         let trimmedString = hexString.trimmingCharacters(in: CharacterSet(charactersIn: "<> ")).replacingOccurrences(of: " ", with: "")
         
         if(isValidHex(trimmedString)){

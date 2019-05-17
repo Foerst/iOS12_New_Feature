@@ -1,0 +1,11 @@
+framework module Util {
+  umbrella header "Util.h"
+
+  export *
+  module * { export * }
+}
+
+module Util.Swift {
+    header "Util-Swift.h"
+    requires objc
+}

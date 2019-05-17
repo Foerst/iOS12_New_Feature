@@ -8,6 +8,7 @@
 
 import UIKit
 import Network
+import Util
 
 struct ServiceConst {
     static let domain = "local."
@@ -245,7 +246,7 @@ extension NetworkManager: NetServiceDelegate {
             var tmp = Data(referencing: frame as NSData)
             // add header, first byte equal to length of data
             
-            let header = Util.dataFromUint32(UInt32(frame.count))
+            let header = DataConverter.dataFromUint32(UInt32(frame.count))
             tmp = header + tmp
             
             var array = [Data]()

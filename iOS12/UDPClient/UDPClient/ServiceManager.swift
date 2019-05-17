@@ -8,6 +8,7 @@
 
 import UIKit
 import Network
+import Util
 
 struct ServiceConst {
     static let domain = "local."
@@ -113,7 +114,7 @@ class ServiceManager: NSObject {
                 // Parse out body length
                 if let data = data {
                     print("RECEIVE DATA \(data.count) BYTES")
-                    let bodyLength: Int = Int(Util.uint32FromData(data[0...3]))
+                    let bodyLength: Int = Int(DataConverter.uint32FromData(data[0...3]))
                     self.readBody(connection, bodyLength: bodyLength, headerLength: headerLength)
                 }
             }
